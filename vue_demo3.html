@@ -16,7 +16,7 @@
 <body>
 
    <div id = "classbinding">
-      <div class = "">
+      <div v-bind:class = "{active:isactive}">
          <b>{{title}}</b>
       </div>
    </div>
@@ -26,7 +26,7 @@
          el: '#classbinding',
          data: {
             title : "CLASS BINDING",
-            isactive : true
+            isactive : false
          }
       });
    </script>
